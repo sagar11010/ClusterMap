@@ -2,6 +2,7 @@
 follow below instruction and impliment cluster map in your app
 
 https://github.com/googlemaps/android-maps-utils
+
 /*
  * Copyright 2013 Google Inc.
  *
@@ -58,3 +59,9 @@ public class ClusteringDemoActivity extends BaseDemoActivity {
         mClusterManager.addItems(items);
     }
 }
+
+
+Toast toast=Toast.makeText(getApplicationContext(),"Hello Javatpoint",Toast.LENGTH_SHORT);  
+toast.setMargin(50,50);  
+toast.show();  
+
