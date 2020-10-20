@@ -34,14 +34,14 @@ import java.io.InputStream;
 import java.util.List;
 
 /**
- * Simple activity demonstrating ClusterManager.
+ * Simple activity demonstrating ClusterManager.for this demo you need to add google map dependency
  */
 public class ClusteringDemoActivity extends BaseDemoActivity {
     private ClusterManager<MyItem> mClusterManager;
 
     @Override
     protected void startDemo() {
-        getMap().moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(51.503186, -0.126446), 10));
+        getMap().moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(51.503186, -0.126446), 10));//this method is for move your current location point
 
         mClusterManager = new ClusterManager<>(this, getMap());
         getMap().setOnCameraIdleListener(mClusterManager);
